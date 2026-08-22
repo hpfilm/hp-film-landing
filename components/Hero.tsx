@@ -7,7 +7,7 @@ import { TrackedLink } from "./TrackedLink";
 export function Hero() {
   return (
     <section className="hero" id="inicio" aria-labelledby="hero-title">
-      <img className="hero-image" src="/images/hero-hp-film-optimized.jpg" alt="Especialista de HP Film trabajando sobre un vehículo en el taller" />
+      <img className="hero-image" src="/images/hero-hp-film-car-optimized.jpg" alt="Técnico de HP Film trabajando sobre un auto rojo en el taller" />
       <div className="hero-shade" />
       <div className="container hero-content">
         <h1 id="hero-title">Tu auto.<br />En manos de<br /><span>especialistas.</span></h1>
