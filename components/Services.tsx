@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, CarFront, CircleDotDashed, PanelsTopLeft } from "lucide-react";
+import { ArrowUpRight, CarFront, CircleDotDashed, PanelsTopLeft, Sparkles } from "lucide-react";
 import { SERVICE_MESSAGES, whatsappUrl } from "../lib/business";
 import { SectionHeading } from "./SectionHeading";
 import { TrackedLink } from "./TrackedLink";
@@ -9,6 +9,7 @@ const services = [
   { key: "polarizado", number: "01", icon: PanelsTopLeft, title: "Polarizado automotor", copy: "Mejorá el confort y la privacidad de tu vehículo con una colocación cuidada y atención personalizada.", cta: "Consultar polarizado", image: "/images/polarizado-service.jpg" },
   { key: "sacabollos", number: "02", icon: CircleDotDashed, title: "Sacabollos", copy: "Enviá fotos del daño por WhatsApp y contanos qué pasó. Evaluamos cada caso antes de coordinar el trabajo.", cta: "Consultar por mi auto", image: "/images/sacabollos-service.jpg" },
   { key: "cristales", number: "03", icon: CarFront, title: "Cristales automotor", copy: "Consultanos por los cristales de tu vehículo y te orientamos según el trabajo que necesites.", cta: "Consultar cristales", image: "/images/cristales-service.jpg" },
+  { key: "interiores", number: "04", icon: Sparkles, title: "Lavado de interiores", copy: "Recuperá la limpieza y el confort del habitáculo con una limpieza profunda y cuidada en cada detalle.", cta: "Consultar lavado interior", image: "/images/interior-despues.webp" },
 ] as const;
 
 export function Services() {

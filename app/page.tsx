@@ -6,6 +6,7 @@ import { Gallery } from "../components/Gallery";
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
 import { Location } from "../components/Location";
+import { LoadingScreen } from "../components/LoadingScreen";
 import { QuoteForm } from "../components/QuoteForm";
 import { Reviews } from "../components/Reviews";
 import { Services } from "../components/Services";
@@ -24,6 +25,6 @@ export default function Home() {
     hasOfferCatalog: { "@type": "OfferCatalog", name: "Servicios automotor", itemListElement: SERVICES.map((name) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name } })) },
   };
   return (
-    <><Header /><main><Hero /><Services /><QuoteForm /><Gallery /><WhyUs /><Reviews /><Location /><FAQ /><FinalCTA /></main><Footer /><FloatingWhatsApp /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /></>
+    <><LoadingScreen /><Header /><main><Hero /><Services /><QuoteForm /><Gallery /><WhyUs /><Reviews /><Location /><FAQ /><FinalCTA /></main><Footer /><FloatingWhatsApp /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /></>
   );
 }

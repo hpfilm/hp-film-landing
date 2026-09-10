@@ -19,12 +19,13 @@ export const BUSINESS = {
   ],
 } as const;
 
-export const SERVICES = ["Polarizado automotor", "Sacabollos", "Cristales automotor"] as const;
+export const SERVICES = ["Polarizado automotor", "Sacabollos", "Cristales automotor", "Lavado de interiores"] as const;
 
 export const SERVICE_MESSAGES = {
   polarizado: "Hola HP Film, vi su página y quería consultar por un polarizado para mi auto.",
   sacabollos: "Hola HP Film, quería consultar por un trabajo de sacabollos.",
   cristales: "Hola HP Film, quería consultar por un trabajo en los cristales de mi auto.",
+  interiores: "Hola HP Film, quería consultar por un lavado de interiores para mi auto.",
 } as const;
 
 export const galleryImages: Array<{ src: string; alt: string }> = [
