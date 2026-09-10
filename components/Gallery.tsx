@@ -11,7 +11,13 @@ export function Gallery() {
       <div className="container">
         <SectionHeading eyebrow="Trabajos" title="Nuestro trabajo habla por nosotros" copy="Este espacio está preparado para incorporar fotografías reales del taller." />
         {galleryImages.length ? (
-          <div className="gallery-grid">{galleryImages.map((image) => <img key={image.src} src={image.src} alt={image.alt} loading="lazy" />)}</div>
+          <div className="gallery-grid">
+            {galleryImages.map((image) => (
+              <figure className="gallery-item" key={image.src}>
+                <img className="gallery-image" src={image.src} alt={image.alt} loading="lazy" decoding="async" />
+              </figure>
+            ))}
+          </div>
         ) : (
           <div className="gallery-placeholder">
             <div className="gallery-graphic"><Images size={52} strokeWidth={1.2} aria-hidden="true" /><span>Próximamente</span></div>
