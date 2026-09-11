@@ -1,4 +1,5 @@
 import { FAQ } from "../components/FAQ";
+import { BackgroundMusic } from "../components/BackgroundMusic";
 import { FinalCTA } from "../components/FinalCTA";
 import { FloatingWhatsApp } from "../components/FloatingWhatsApp";
 import { Footer } from "../components/Footer";
@@ -25,6 +26,6 @@ export default function Home() {
     hasOfferCatalog: { "@type": "OfferCatalog", name: "Servicios automotor", itemListElement: SERVICES.map((name) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name } })) },
   };
   return (
-    <><LoadingScreen /><Header /><main><Hero /><Services /><QuoteForm /><Gallery /><WhyUs /><Reviews /><Location /><FAQ /><FinalCTA /></main><Footer /><FloatingWhatsApp /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /></>
+    <><LoadingScreen /><Header /><main><Hero /><Services /><QuoteForm /><Gallery /><WhyUs /><Reviews /><Location /><FAQ /><FinalCTA /></main><Footer /><FloatingWhatsApp /><BackgroundMusic /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /></>
   );
 }
