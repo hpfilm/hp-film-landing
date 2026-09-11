@@ -13,12 +13,12 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_PROJECT_
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "HP Film | Polarizado, Sacabollos y Cristales Automotor",
+  title: "HP Film Lanús | Polarizado, Sacabollos y Cristales Automotor",
   description: "HP Film. Polarizado, sacabollos y cristales automotor en Buenos Aires. Consultá por tu vehículo y pedí presupuesto por WhatsApp.",
   alternates: { canonical: "/" },
   openGraph: { type: "website", locale: "es_AR", title: "HP Film | Tu auto en manos de especialistas", description: "Polarizado, sacabollos y cristales automotor. Pedí presupuesto por WhatsApp.", url: "/", siteName: "HP Film", images: [{ url: "/images/hero-hp-film.png", width: 1680, height: 945, alt: "HP Film, especialistas en cuidado automotor" }] },
   twitter: { card: "summary_large_image", title: "HP Film | Tu auto en manos de especialistas", description: "Polarizado, sacabollos y cristales automotor.", images: ["/images/hero-hp-film.png"] },
-  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION } : undefined,
+  verification: { google: "1YJ-7jAGphYoKVHoG6c5jlLRzWnBrjZLHMjaQZp_ZTg" },
   icons: {
     icon: "/images/logo-hp-film.png",
     shortcut: "/images/logo-hp-film.png",
